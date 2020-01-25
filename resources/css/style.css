@@ -73,7 +73,7 @@ h3{
 h2:after{
     display: block;
     height: 2px;
-    width: 400px;
+    width: 150px;
     background-color: #2980b9;
     content: "";
     margin: 0 auto;
@@ -86,11 +86,17 @@ h2:after{
   width: 70%;
   margin-left: 15%;
   margin-right: 15%;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 .box p{
   font-size: 90%;
   line-height: 145%;
+}
+
+.section-features:first-of-type{
+  margin-left:45px;
 }
 
 .section-features ion-icon {
@@ -112,6 +118,7 @@ h2:after{
 .btn:visited{
   display: inline-block;
   padding: 10px 30px;
+  margin-top: 10px;
   font-weight: 300;
   text-decoration: none;
   border-radius: 100px;
@@ -239,6 +246,9 @@ header{
   margin-bottom: 80px;
 }
 
+.works-step p{height: 30px;}
+
+
 .works-step div{
   color: #2980b9;
   border: 2px solid #2980b9;
@@ -250,7 +260,8 @@ header{
   text-align: center;
   float: left;
   font-size:150%;
-  margin-right: 10px;
+  margin-right: 25px;
+  padding-top: 10px;
 }
 
 .btn-app img{
@@ -269,11 +280,16 @@ header{
   color: #fff;
 }
 
+.testimonials-box{
+  padding-left:50px;
+}
+
 blockquote {
     margin-top: 40px;
     padding: 2%;
     font-style: italic;
     line-height: 145%;
+    height: 50px;
 }
 
 cite{
@@ -288,6 +304,7 @@ cite img{
     width: 20%;
     border-radius: 50%;
     margin-right: 10px;
+    vertical-align: center;
 }
 
 /*----------------------------------------------*/
@@ -380,5 +397,5 @@ footer{
 footer p{
   color: #888;
   text-align: center;
-  margin: 20px;
+  margin-top: 50px;
 }

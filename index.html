@@ -4,6 +4,8 @@
     <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
     <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
     <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
+    <script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
     <title>Mizocafe</title>
   </head>
   <body>
@@ -21,44 +23,47 @@
       <div class="hero-text-box">
         <h1>No Coffee, No Work</h1>
         <a class="btn btn1" href="#">I want a cup of coffee</a>
-        <a class="btn btn2" href="#">Show me more</a>
+        <a class="btn btn2" href="#">もっとみる</a>
       </div>
     </header>
 
     <section class="section-features">
         <div class="row">
-                <h2>Now &mdash; Let's get started!</h2>
+                <h2>おいしいコーヒーできてます</h2>
                 <p class="long-copy">
-                    Hello, we’re Omnifood, your new premium food delivery service. We know you’re always busy. No time for cooking. So let us take care of that, we’re really good at it, we promise!
+                  Mizocafe 開業 xx年<br>毎日、豆から挽いてコーヒーを入れています。<br>
+                  コーヒーには様々な効果・効能があります。<br>忙しいあなたもホッとひと息。
                 </p>
         </div>
         <div class="row">
           <div class="col span-1-of-3 box">
-            <ion-icon name="time"></ion-icon>
-                        <h3>Morning Coffee</h3>
+            <ion-icon name="sunny"></ion-icon>
+                        <h3>モーニングコーヒー</h3>
                         <p>
-                            You're only twenty minutes away from your delicious and super healthy meals delivered right to your home. We work with the best chefs in each town to ensure that you're 100% happy.
+                            出勤後、眠気覚ましの一杯。
+                            <br>
+                            今日も1日がんばろう。
                         </p>
           </div>
           <div class="col span-1-of-3 box">
             <ion-icon name="time"></ion-icon>
-                        <h3>After Lunch Coffee</h3>
+                        <h3>ランチ後のコーヒー</h3>
                         <p>
-                            You're only twenty minutes away from your delicious and super healthy meals delivered right to your home. We work with the best chefs in each town to ensure that you're 100% happy.
+                            昼休憩から午後一の仕事への移行をスムーズにしてくれる一杯。
                         </p>
           </div>
           <div class="col span-1-of-3 box">
-            <ion-icon name="time"></ion-icon>
-                        <h3>After Lunch Coffee</h3>
+            <ion-icon name="laptop"></ion-icon>
+                        <h3> 仕事中のコーヒー</h3>
                         <p>
-                            You're only twenty minutes away from your delicious and super healthy meals delivered right to your home. We work with the best chefs in each town to ensure that you're 100% happy.
+                            仕事中の集中力を高めてくれる一杯。
                         </p>
           </div>
         </div>
     </section>
     <section class="section-steps">
       <div class="row">
-        <h2>Get PayPay ready &mdash; Simple as 1, 2, 3</h2>
+        <h2>PayPay払い、絶賛受付中</h2>
       </div>
       <div class="row">
         <div class="col span-1-of-2 steps-box">
@@ -67,15 +72,15 @@
         <div class="col span-1-of-2 steps-box">
             <div class="works-step">
               <div>1</div>
-              <p>テキトーに追記</p>
+              <p>PayPayアプリをインストール。<br>まずはアカウントを登録から。</p>
             </div>
             <div class="works-step">
               <div>2</div>
-              <p>テキトーに追記</p>
+              <p>PayPay残高へチャージしよう。</p>
             </div>
             <div class="works-step">
               <div>3</div>
-              <p>テキトーに追記</p>
+              <p>QRコードを読み取って支払い<br>読取ページのリンクを用意</p>
             </div>
 
             <a href="https://apps.apple.com/jp/app/paypay-%E3%83%9A%E3%82%A4%E3%83%9A%E3%82%A4-%E3%82%AD%E3%83%A3%E3%83%83%E3%82%B7%E3%83%A5%E3%83%AC%E3%82%B9%E3%81%A7%E3%82%B9%E3%83%9E%E3%83%BC%E3%83%88%E3%81%AB%E3%81%8A%E6%94%AF%E6%89%95%E3%81%84/id1435783608" target="_blank" rel="noopener noreferrer" class="btn-app" alt="Apple Store Button"><img src="resources/img/download-app.svg"></a>
@@ -88,16 +93,16 @@
           <h2>愛好家の声</h2>
       </div>
       <div class="row">
-          <div class="col span-1-of-3">
+          <div class="col span-1-of-3 testimonials-box">
               <blockquote>その挑戦に、力を。</blockquote>
               <cite><img src="resources/img/img_menu_message.jpg">A社長</cite>
           </div>
-          <div class="col span-1-of-3">
+          <div class="col span-1-of-3 testimonials-box">
               <blockquote>UDXへ通う頻度が増えました。</blockquote>
               <cite><img src="resources/img/jomu.jpeg">T常務</cite>
           </div>
-          <div class="col span-1-of-3">
-              <blockquote>経費で落ちおません！</blockquote>
+          <div class="col span-1-of-3 testimonials-box">
+              <blockquote>これがサステナビリティ！</blockquote>
               <cite><img src="resources/img/senmu.jpeg">B専務</cite>
           </div>
       </div>
@@ -161,8 +166,5 @@
     </div>
   </footer>
 
-
-<!--なんかよく分からないがioniconsのロゴを表示できるようにする魔法-->
-    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
   </body>
 </html>
