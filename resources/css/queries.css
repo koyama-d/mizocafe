@@ -46,10 +46,16 @@
   .works-step:last-of-type{margin-bottom: 60px;}
 
   /* section-testimonials */
-  blockquote{font-size: 90%;}
+  blockquote{font-size: 80%;}
 
 
   /* section-plans */
+    
+
+  .plan-box { 
+      width: 100%;
+      margin-left: 0%;
+    }
   .plan-box ul li{ font-size: 85%;}
 }
 
@@ -57,9 +63,13 @@
   /* From 481px to 767px */
   /*----------------------------------------------*/
   @media only screen and (max-width: 767px){
-    /* Overall */
+      /* Overall */
     body{ font-size:16px;}
     section{ padding:30px 0;}
+      /* section-features */
+    .section-features:first-of-type{
+      margin-left:0;
+    }
     h1{ font-size: 180%;}
     h2{ font-size:150%;}
     .row{ padding: 0 4%;}
@@ -67,18 +77,20 @@
       width: 100%;
       margin 0 0 4% 0;
     }
-    /* header */
-    .main-nav {display: none;}
+      /* header */
+    .main-nav {
+        display: none;
+        float: left;
+        margin-top: 30px;
+        margin-left: 25px;
+    }
+
     .hero-text-box{ padding:0 4%;}
     .long-copy{
       width: 100%;
       margin-left: 0%;
     }
 
-      /* section-features */
-    .section-features:first-of-type{
-      margin-left:0;
-    }
 
       /* section-steps */
       .steps-box:first-child{text-align:center;}
@@ -107,6 +119,33 @@
   /* rom 0 to 480px */
   /*----------------------------------------------*/
   @media only screen and (max-width: 480px){
-    section{ padding: 25px 0;}
+      /* overall */
+      .logo{ 
+          height:25%;
+          width:25%;
+      }
+      section{ padding: 25px 0;}
+      h2{ font-size:120%;}
+      
+      /* header */
+      .btn:link,
+      .btn:visited{
+      display: inline-block;
+      padding: 10px 30px;
+      float: left;
+      margin-left: 1%;
+    }
+      /* section-features */
+
+      .long-copy{
+          font-size: 85%;
+      }
+      
+      .plan-box div:first-child{
+          margin-top: 5%;
+    }
+      
+      /* footer */
     .contact-form {width: 100%;}
+
 }
