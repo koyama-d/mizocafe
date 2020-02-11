@@ -1,0 +1,19 @@
+<h1>投稿一覧</h1>
+<p><%= notice %></p>
+<table>
+    <tr>
+      <th>コメント</th>
+    </tr>
+
+  <% @posts.each do |post| %>
+    <tr>
+      <td><%= post.content %></td>
+      <td><%= link_to '詳細を確認する', post_path(post.id) %></td>
+      <td><%= link_to '編集する', edit_post_path(post.id), data: {confirm:'本当に編集していいですか？'} %></td>
+      <td><%= link_to '削除する', post_path(post.id),method: :delete, data: {confirm:'本当に削除していいですか？'} %></td>
+    </tr>
+  <% end %>
+</table>
+
+<%= link_to 'TOPページへ','file:///Users/koyamadaisuke/workspace/mizocafe/index.html' %>
+<%= link_to '新規投稿画面へ', new_post_path %>
