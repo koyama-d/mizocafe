@@ -3,11 +3,13 @@
 <table>
     <tr>
       <th>コメント</th>
+      <th>ユーザ名</th>
     </tr>
 
   <% @posts.each do |post| %>
     <tr>
       <td><%= post.content %></td>
+      <td><%= post.user.name %></td>
       <td><%= link_to '詳細を確認する', post_path(post.id) %></td>
       <td><%= link_to '編集する', edit_post_path(post.id), data: {confirm:'本当に編集していいですか？'} %></td>
       <td><%= link_to '削除する', post_path(post.id),method: :delete, data: {confirm:'本当に削除していいですか？'} %></td>
