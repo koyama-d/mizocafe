@@ -4,12 +4,15 @@
     <title>Mizocafe</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
+    <meta name="viewport" content="width=device-width">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
+    <header>
+
+    </header>
     <% flash.each do |key,value| %>
       <%= content_tag(:div,value,class:"#{key}") %>
     <% end %>
@@ -22,5 +25,9 @@
       <%= link_to 'ログイン', new_session_path %>
     <% end %>
     <%= yield %>
+    <footer>
+      <p>運営　Mizocafe（株）</p>
+      <p>Copyright 2020</p>
+    </footer>
   </body>
 </html>
