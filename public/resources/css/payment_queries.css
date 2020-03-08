@@ -1,0 +1,173 @@
+/*----------------------------------------------*/
+/* Up to 1200px */
+/*----------------------------------------------*/
+@media only screen and (max-width: 1200px) {
+  /* header */
+  .hero-text-box{
+    width: 100%;
+    padding: 0 2%;
+  }
+  .row{
+    padding: 0 2%;
+  }
+}
+
+/*----------------------------------------------*/
+/* From 768px to 1023px */
+/*----------------------------------------------*/
+@media only screen and (max-width: 1023px){
+/* Overall */
+  body{ font-size: 18px;}
+  section{ padding: 60px 0;}
+
+/* section-features */
+
+  .section-features{
+      margin-bottom: 25px;
+  }
+
+  .long-copy{
+    width: 80%;
+    margin-left: 10%;
+  }
+
+  .section-features ion-icon {
+    font-size: 45px;
+  }
+
+  /* section-steps */
+  .steps-box{margin-top: 10px;}
+  .steps-box:last-child{margin-top: 10px;}
+  .works-step{
+    margin-bottom: 40px;
+    font-size:90%;
+  }
+
+  .works-step:last-of-type{margin-bottom: 60px;}
+
+  /* section-testimonials */
+  blockquote{font-size: 80%;}
+
+
+  /* section-plans */
+
+
+  .plan-box {
+      width: 100%;
+      margin-left: 0%;
+    }
+  .plan-box ul li{ font-size: 85%;}
+}
+
+  /*----------------------------------------------*/
+  /* From 481px to 767px */
+  /*----------------------------------------------*/
+  @media only screen and (max-width: 767px){
+      /* Overall */
+    body{ font-size:16px;}
+    section{ padding:30px 0;}
+      /* section-features */
+    .section-features:first-of-type{
+      margin-left:0;
+    }
+    h1{ font-size: 180%;}
+    h2{ font-size:150%;}
+    .row{ padding: 0 4%;}
+    .col{
+      width: 100%;
+      margin 0 0 4% 0;
+    }
+      /* header */
+    .main-nav {
+        display: none;
+        float: left;
+        margin-top: 30px;
+        margin-left: 25px;
+    }
+
+    .hero-text-box{ padding:0 4%;}
+    .long-copy{
+      width: 100%;
+      margin-left: 0%;
+    }
+
+
+      /* section-steps */
+      .steps-box:first-child{text-align:center;}
+      .works-step{margin-bottom: 20px;}
+      .works-step:first-of-type{margin-top: 20px;}
+      .works-step:last-of-type{margin-bottom: 30px;}
+      .works-step div{
+        width: 40px;
+        height: 40px;
+        padding: 4px;
+        margin-right: 15px;
+        font-size: 120%;
+      }
+      .works-step p{height:35px;}
+
+      /* section-testimonials */
+      .cite{margin-top:0;}
+      .blockquote{
+        margin:0;
+        padding:0;
+        font-size:100%;
+      }
+  }
+
+  /*----------------------------------------------*/
+  /* rom 0 to 480px */
+  /*----------------------------------------------*/
+  @media only screen and (max-width: 480px){
+      /* overall */
+      .logo{
+          height:25%;
+          width:25%;
+      }
+      section{ padding: 25px 0;}
+      h2{ font-size:120%;}
+
+      /* header */
+      .btn:link,
+      .btn:visited{
+      display: inline-block;
+      padding: 10px 30px;
+      float: left;
+      margin-left: 1%;
+    }
+
+      /* transmittion */
+      .transimit_process{
+        text-align:center;
+      }
+
+      .transimit_process img{
+        width:50%;
+      }
+
+      .transmittion{
+        text-align:left;
+      }
+
+      .transmittion_QR{
+        text-align:left;
+      }
+
+      .transmittion_QR img{
+        padding: 10px 0 5px 0;
+        width: auto;
+        height: 300px;
+        margin-left:auto;
+      }
+      .transmittion img{
+        padding: 10px 0 5px 0;
+        width: auto;
+        height: 300px;
+        margin-right:auto;
+      }
+
+
+      /* footer */
+    .contact-form {width: 100%;}
+
+}

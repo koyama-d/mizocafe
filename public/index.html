@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="jp">
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0", charset="utf-8">
 
     <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
     <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
@@ -14,17 +14,19 @@
     <header>
       <nav>
         <div class="row">
+          <a href="index.html">
           <img src="resources/img/logo.png" alt="logo" class="logo">
+          </a>
           <ul class="main-nav">
-            <li><a href="http://localhost:3000/posts">投稿画面</a></li>
-            <li><a href="#">ログイン</a></li>
-            <li><a href="#">会員登録</a></li>
+            <li><a href="/posts/new">コメントしよう</a></li>
+            <li><a href="/sessions/new">ログイン</a></li>
+            <li><a href="/users/new">会員登録</a></li>
           </ul>
         </div>
       </nav>
       <div class="hero-text-box">
         <h1>No Coffee, No Work</h1>
-        <a class="btn btn1" href="#">I want a cup of coffee</a>
+        <a class="btn btn1" href="#choose_plan">I want a cup of coffee</a>
         <a class="btn btn2" href="#">もっとみる</a>
       </div>
     </header>
@@ -109,7 +111,7 @@
           </div>
       </div>
   </section>
-  <section class="section-plans">
+  <section class="section-plans" id="choose_plan">
     <div class="row">
         <h2>プランを選んではじめよう。</h2>
     </div>
@@ -130,7 +132,7 @@
               </ul>
           </div>
           <div>
-              <a href="#" class="btn btn1">PayPayで支払う</a>
+              <a href="subscription_payment.html" class="btn btn1">PayPayで支払う</a>
           </div>
         </div>
       </div>
@@ -150,7 +152,7 @@
               </ul>
           </div>
           <div>
-              <a href="#" class="btn btn2">PayPayで支払う</a>
+              <a href="one_time_payment.html" class="btn btn2">PayPayで支払う</a>
           </div>
         </div>
       </div>
@@ -159,7 +161,7 @@
   <footer>
     <div class="row">
       <ul class="footer-nav">
-        <li><a href="#">About us</a></li>
+        <li><a href="about_us.html">About us</a></li>
         <li><a href="#">お問い合わせ</a></li>
       </ul>
     </div>
