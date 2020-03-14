@@ -78,12 +78,43 @@
       margin 0 0 4% 0;
     }
       /* header */
+      
+      /* main-nav */
     .main-nav {
-        display: none;
         float: left;
-        margin-top: 30px;
+        margin-top: 2px;
         margin-left: 25px;
     }
+      
+    .mobile-nav-icon ion-icon{
+        display: inline-block;
+        color: #fff;
+      }
+      
+      .main-nav {
+          float: left;
+      }
+      
+      .main-nav li{
+          display: block;
+      }
+      
+      .main-nav li:first-child{ margin-top: 0;}
+      
+      .main-nav li a:link,
+      .main-nav li a:visited{
+          display: block;
+          border: 0;
+          padding: 5px 0;
+          font-size: 100%;
+      }
+      
+
+      
+      /*------- Sticky nav -------*/
+        .sticky .main-nav li a:link,
+        .sticky .main-nav li a:visited{ padding: 5px 0;}
+      
 
     .hero-text-box{ padding:0 4%;}
     .long-copy{

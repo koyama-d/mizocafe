@@ -1,5 +1,6 @@
 /* color: #2980b9 */
 
+
 /*----------------------------------------------*/
 /* BASIC SETUP */
 /*----------------------------------------------*/
@@ -179,10 +180,10 @@ header{
 }
 
 .logo{
-  height:100px;
+  height:70px;
   width: auto;
   float: left;
-  margin-top: 20px;
+  margin-top: 5px;
 }
 
 .main-nav{
@@ -211,6 +212,36 @@ header{
 .main-nav li a:hover,
 .main-nav li a:active{
   border-bottom: 2px solid #2980b9;
+}
+
+/*------- Sticky nav -------*/
+.sticky{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.96);
+  -webkit-box-shadow: 0 2px 2px rgb(244, 244, 244);
+  box-shadow: 0 2px 2px rgb(244, 244, 244);
+}
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited{
+  padding: 17px 0;
+  color: #555;
+}
+
+
+/*------- Mobile nav -------*/
+.mobile-nav-icon{
+    float: right;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.mobile-nav-icon ion-icon{
+    display: none;
+    font-size: 200%;
 }
 
 /*----------------------------------------------*/
@@ -334,13 +365,14 @@ cite img{
 }
 
 .plan-box div:first-child{
-  background-color: #f5f5f5;
+  background-color: #f0f0f0;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 }
 
 .plan-box div:last-child{
   text-align: center;
+  background-color: #f8f8f8;
   border: 0;
 }
 
@@ -405,4 +437,20 @@ footer p{
   color: #888;
   text-align: center;
   margin-top: 50px;
+}
+
+
+/*----------------------------------------------*/
+/* ANIMATION */
+/*----------------------------------------------*/
+.js--wp-1,
+.js--wp-2{
+    opacity: 0;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+}
+
+.js--wp-1.animated,
+.js--wp-2.animated{
+    opacity: 1;
 }

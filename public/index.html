@@ -5,33 +5,35 @@
 
     <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
     <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
+    <link rel="stylesheet" type="text/css" href="vendors/css/animate.css">
     <link rel="stylesheet" type="text/css" href="resources/css/style.css">
     <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
-    <script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
     <title>Mizocafe</title>
   </head>
   <body>
     <header>
-      <nav>
+      <nav class="sticky">
         <div class="row">
           <a href="index.html">
           <img src="resources/img/logo.png" alt="logo" class="logo">
           </a>
-          <ul class="main-nav">
+          <ul class="main-nav js--main-nav">
             <li><a href="/posts/new">コメントしよう</a></li>
             <li><a href="/sessions/new">ログイン</a></li>
             <li><a href="/users/new">会員登録</a></li>
           </ul>
+          <a class="mobile-nav-icon js--nav-icon"><ion-icon name="close-circle-outline" class="close-circle-outline"></ion-icon></a>
         </div>
       </nav>
       <div class="hero-text-box">
         <h1>No Coffee, No Work</h1>
-        <a class="btn btn1" href="#choose_plan">I want a cup of coffee</a>
-        <a class="btn btn2" href="#">もっとみる</a>
+        <a class="btn btn1 js--scroll-to-plans" href="#">コーヒーを飲む</a>
+        <a class="btn btn2 js--scroll-to-section-features" href="#">もっとみる</a>
       </div>
     </header>
 
-    <section class="section-features">
+    <section class="section-features js--section-features">
         <div class="row">
                 <h2>おいしいコーヒーできてます</h2>
                 <p class="long-copy">
@@ -39,7 +41,7 @@
                   コーヒーには様々な効果・効能があります。<br>忙しいあなたもホッとひと息。
                 </p>
         </div>
-        <div class="row">
+        <div class="row js--wp-1">
           <div class="col span-1-of-3 box">
             <ion-icon name="sunny"></ion-icon>
                         <h3>モーニングコーヒー</h3>
@@ -71,7 +73,7 @@
       </div>
       <div class="row">
         <div class="col span-1-of-2 steps-box">
-          <img src="resources/img/PayPay.png" alt="PayPay on iPhone" class="app-screen">
+          <img src="resources/img/PayPay.png" alt="PayPay on iPhone" class="app-screen js--wp-2">
         </div>
         <div class="col span-1-of-2 steps-box">
             <div class="works-step">
@@ -111,13 +113,13 @@
           </div>
       </div>
   </section>
-  <section class="section-plans" id="choose_plan">
+  <section class="section-plans js--section-plans" id="choose_plan">
     <div class="row">
         <h2>プランを選んではじめよう。</h2>
     </div>
     <div class="row">
       <div class="col span-1-of-2">
-        <div class="plan-box">
+        <div class="plan-box js--wp-3">
           <div>
             <h3>期間限定キャンペーン</h3>
             <p class="plan-price">500円 <span>/ month</span></p>
@@ -169,7 +171,10 @@
       <p>Copyright &copy; 2020 by Mizocafe. All rights reserved.</p>
     </div>
   </footer>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="vendors/js/jquery.waypoints.min.js"></script>
 <script src="resources/js/script.js"></script>
+
  </body>
 </html>
