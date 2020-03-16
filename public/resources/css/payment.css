@@ -89,11 +89,10 @@ header{
 }
 
 .logo{
-  height:100px;
+  height:70px;
   width: auto;
   float: left;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 5px;
 }
 
 .main-nav{
